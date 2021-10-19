@@ -1,0 +1,29 @@
+{
+  "name": "son-schema",
+  "version": "1.0.0",
+  "description": "son-schema",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ts": "tsc index.ts -w",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talyaron/son-schema.git"
+  },
+  "author": "Tal Yaron",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/talyaron/son-schema/issues"
+  },
+  "homepage": "https://github.com/talyaron/son-schema#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.11",
+    "typescript": "^4.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.1"
+  }
+}
