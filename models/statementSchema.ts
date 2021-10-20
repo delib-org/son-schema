@@ -6,7 +6,7 @@ const Statement = new Schema({
     kidsId:[String], // id references
     ownerId:String, // id reference
     text:String,
-    scoringByOthers:[{
+    evaluteByOthers:[{
        
         type:String, // type refernce
         agragatedValue:Number,
@@ -16,10 +16,11 @@ const Statement = new Schema({
             score:Number
         }]
     }],     
-    voteOn:[{
+    evaluate:[{
         statmentId:String, // id reference to the statment which was voted on
-        type:String, // type ref
-        score:Number // value the user gave upon this spesific type of value
+        type:String, // type of evaluation
+        score:Number, // value the user gave upon this spesific type of value
+        units:String
     }]
 })
 
