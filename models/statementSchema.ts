@@ -6,11 +6,11 @@ const Statement = new Schema({
     kidsId:[String], // id references
     ownerId:String, // id reference
     text:String,
-    evaluteByOthers:[{
+    evaluateByOthers:[{
        
-        type:String, // type refernce
+        type:String, // type refernce. WRITEN IN CAPITAL LETTERS
         agragatedValue:Number,
-        voters:[{
+        evaluators:[{
             ownerId:String, // id reference
             statmentId: String, // id reference
             score:Number
@@ -18,7 +18,7 @@ const Statement = new Schema({
     }],     
     evaluate:[{
         statmentId:String, // id reference to the statment which was voted on
-        type:String, // type of evaluation
+        type:String, // type of evaluation.WRITEN IN CAPITAL LETTERS
         score:Number, // value the user gave upon this spesific type of value
         units:String
     }]
